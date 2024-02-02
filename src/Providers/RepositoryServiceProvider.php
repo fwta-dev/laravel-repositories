@@ -37,7 +37,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function boot()
     {
         // Publish config
-        $this->publishConfigFrom('rinvex/laravel-repositories','rinvex');
+        $this->publishConfigFrom('rinvex/laravel-repositories','rinvex/repositories');
 
         // Subscribe the registered event listener
         $this->app['events']->subscribe('rinvex.repository.listener');
